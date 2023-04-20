@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = [-1, 4, -7, 2, 7, -10, 21, -17, 15]
+        positiveNumber = numbers.filter(function(number){
+            return number > 0
+        })
+        console.log('Первоначальный массив' + number);
+        console.log('Отфильтровать массив' + positiveNumber);
+    let numbers = [1, 2, -3, 5, 7, -9, 11, 13, -15],
+    x10Numbers = numbers.map(function(number){
+        return number * 10
+    })
+
+    console.log('Первоначальный массив' + numbers);
+    console.log('Увеличенный в 10' + x10Numbers)
+
+    let numbers = [1, 2, -3, 5, 7, -9, 11, 13, -15],
+    sumNumbers = numbers.reduce(function(sum, number){
+        return sum + number
+    })
+
+    console.log('Первоначальный массив' + numbers);
+    console.log('Увеличенный в 10' + sumNumbers)
+
+
+
+    function sayHi(name){
+        console.log('Привет,' + name);
+    }
+    sayHi('Кирилл')
+
+
+
+    let sayBye = function(name){
+        console.log('Пока, ' + name);
+    }
+    sayBye('Адилет')
+    function sayAge(age){
+        console.log('Привет,тебе ' + age);
+    }
+    sayAge('21')
+
+    function sum(a, b){
+        return a + b
+    }
+
+    c = sum(10, 34);
+    d = sum(12, 43);
+    v = sum(43, 56)
+    console.log(c, d, v);
+
+    function suma(a, s, d, f){
+        return a - s * f / d
+    }
+
+    z = suma(20, 33, 45, 21)
+    x = suma(26, 23, 15, 31)
+    c = suma(56, 13, 35, 21)
+    v = suma(16, 43, 25, 71)
+    console.log(z, x, c, v)
+    </script>
+</body>
+</html>
